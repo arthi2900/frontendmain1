@@ -11,7 +11,7 @@ export function Login()
     const loginsubmit=async(e)=>{
         e.preventDefault();
         try {
-            const res =await fetch(`${api}/auth/login`,{method:"POST",
+            const res =await fetch(`${api}/auth/login`,{method:"GET",
            body:JSON.stringify({username,password}),
             headers:{"Content-Type":"application/json"}
               })
